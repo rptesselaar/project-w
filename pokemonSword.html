@@ -1,0 +1,71 @@
+<div class="myPokemonTeam">
+  <section>
+    <figure>
+      <img id="rillaboom"class="jump" width="64" src="assets/img/gray_rillaboom.png" alt="" />
+    </figure>
+      <figcaption><p id="rillaboomText"></p></figcaption>
+    <button type="button" onclick="document.getElementById('rillaboom').src='https://img.pokemondb.net/sprites/sword-shield/normal/rillaboom.png'; rillaboomAudio(); rillaboomText();">pokemon 1</button>
+  </section>
+
+  <section>
+    <figure>
+      <img id="arcanine"class="jump" width="64" src="assets/img/gray_arcanine.png" alt="arcanine" />
+    </figure>
+      <figcaption><p id="arcanineText"></p></figcaption>
+    <button type="button" onclick="document.getElementById('arcanine').src='assets/img/arcanine.png'; arcanineAudio(); arcanineText();">Pokemon 2</button>
+  </section>
+
+  <section>
+    <figure>
+      <img id="garchomp"class="jump" width="64" src="assets/img/gray_garchomp.png" alt="garchomp" />
+    </figure>
+      <figcaption><p id="garchompText"></p></figcaption>
+    <button type="button" onclick="document.getElementById('garchomp').src='assets/img/garchomp.png'; garchompAudio(); garchompText();">Pokemon 3</button>
+  </section>
+
+  <section>
+    <figure>
+      <img id="metacross"class="jump" width="64" src="assets/img/gray_metacross.png" alt="metacross" />
+    </figure>
+      <figcaption><p id="metacrossText"></p></figcaption>
+    <button type="button" onclick="document.getElementById('metacross').src='assets/img/metacross.png'; metacrossAudio(); metacrossText();">Pokemon 4</button>
+  </section>
+
+  <section>
+    <figure>
+      <img id="nidoqueen"class="jump" width="64" src="assets/img/gray_nidoqueen.png" alt="nidoqueen" />
+    </figure>
+      <figcaption><p id="nidoqueenText"></p></figcaption>
+    <button type="button" onclick="document.getElementById('nidoqueen').src='assets/img/nidoqueen.png'; nidoqueenAudio(); nidoqueenText();">Pokemon 5</button>
+  </section>
+
+  <section>
+    <figure>
+      <img id="blastoise"class="jump" width="64" src="assets/img/gray_blastoise.png" alt="blastoise" />
+    </figure>
+      <figcaption><p id="blastoiseText"></p></figcaption>
+    <button type="button" onclick="document.getElementById('blastoise').src='assets/img/blastoise.png'; blastoiseAudio(); blastoiseText()">Pokemon 6</button>
+  </section>
+</div>
+
+  <audio id="rillaboomAudio"><source src="assets/sound/rillaboom.mp3" type="audio/mpeg"></audio><audio id="arcanineAudio"><source src="assets/sound/arcanine.mp3" type="audio/mpeg"></audio><audio id="garchompAudio"><source src="assets/sound/garchomp.mp3" type="audio/mpeg"></audio><audio id="metacrossAudio"><source src="assets/sound/metacross.mp3" type="audio/mpeg"></audio><audio id="nidoqueenAudio"><source src="assets/sound/nidoqueen.mp3" type="audio/mpeg"></audio>
+  <audio id="blastoiseAudio"><source src="assets/sound/blastoise.mp3" type="audio/mpeg"></audio>
+
+  <script> //onclick audio script
+  var r = document.getElementById("rillaboomAudio"); function rillaboomAudio(){r.play();}
+  var a = document.getElementById("arcanineAudio");  function arcanineAudio() {a.play();}
+  var g = document.getElementById("garchompAudio");  function garchompAudio() {g.play();}
+  var n = document.getElementById("nidoqueenAudio"); function nidoqueenAudio(){n.play();}
+  var m = document.getElementById("metacrossAudio"); function metacrossAudio(){m.play();}
+  var b = document.getElementById("blastoiseAudio"); function blastoiseAudio(){b.play();}
+</script>
+
+
+<script> //onclick text script
+  function rillaboomText() {document.getElementById("rillaboomText").innerHTML = "Rillaboom lv. 98";}
+  function arcanineText() {document.getElementById("arcanineText").innerHTML = "Arcanine lv. 82";}
+  function garchompText() {document.getElementById("garchompText").innerHTML = "garchomp lv. 78";}
+  function metacrossText() {document.getElementById("metacrossText").innerHTML = "Metacross lv. 84";}
+  function nidoqueenText() {document.getElementById("nidoqueenText").innerHTML = "Nidoqueen lv. 88";}
+  function blastoiseText() {document.getElementById("blastoiseText").innerHTML = "Blastoise lv. 92";}
+</script>
